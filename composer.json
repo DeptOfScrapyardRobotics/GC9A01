@@ -1,0 +1,44 @@
+{
+    "name": "dept-of-scrapyard-robotics/gc9a01",
+    "description": "ScrapyardIO Framework extension library that enables SPI Control of GC9A01 TFT Color Displays on Linux",
+    "type": "library",
+    "version": "0.1.0",
+    "keywords": [
+        "laravel",
+        "io",
+        "linux",
+        "embedded",
+        "spi",
+        "gc9a01"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Project Saturn Studios, LLC",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+
+        "dept-of-scrapyard-robotics/scrapyard-io-framework": "^0.1.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "*",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ScrapyardIO\\Displays\\Color\\GC9A01\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "stable"
+}

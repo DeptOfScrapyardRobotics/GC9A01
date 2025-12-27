@@ -1,0 +1,91 @@
+<?php
+
+namespace ScrapyardIO\Displays\Color\GC9A01\Enums;
+
+enum GC9A01Command: int
+{
+    case SOFTWARE_RESET = 0x01;
+    case ENTER_SLEEP_MODE = 0x10;
+    case EXIT_SLEEP_MODE = 0x11;
+    case PARTIAL_MODE_ON = 0x12;
+    case NORMAL_DISPLAY_MODE_ON = 0x13;
+    case DISPLAY_INVERSION_OFF = 0x20;
+    case DISPLAY_INVERSION_ON = 0x21;
+    case DISPLAY_OFF = 0x28;
+    case DISPLAY_ON = 0x29;
+    case TEARING_EFFECT_LINE_OFF = 0x34;
+    case TEARING_EFFECT_LINE_ON = 0x35;
+    case IDLE_MODE_OFF = 0x38;
+    case IDLE_MODE_ON = 0x39;
+    case INTER_REGISTER_ENABLE2 = 0xEF;
+    case INTER_REGISTER_ENABLE1 = 0xFE;
+
+    case COLUMN_ADDRESS_SET = 0x2A;
+    case ROW_ADDRESS_SET = 0x2B;
+    case MEMORY_WRITE = 0x2C;
+    case PARTIAL_AREA = 0x30;
+    case VERTICAL_SCROLLING_DEFINITION = 0x33;
+    case MEMORY_ACCESS_CONTROL = 0x36;
+    case VERTICAL_SCROLLING_START_ADDRESS = 0x37;
+    case PIXEL_FORMAT_SET = 0x3A;
+    case WRITE_MEMORY_CONTINUE = 0x3C;
+    case SET_TEAR_SCANLINE = 0x44;
+    case WRITE_DISPLAY_BRIGHTNESS = 0x51;
+    case WRITE_CTRL_DISPLAY = 0x53;
+
+    case SECRET_SETTING24 = 0x62;
+    case SECRET_SETTING25 = 0x63;
+    case SECRET_SETTING26 = 0x64;
+    case SECRET_SETTING27 = 0x66;
+    case SECRET_SETTING28 = 0x67;
+    case SECRET_SETTING23 = 0x70;
+    case SECRET_SETTING29 = 0x74;
+    case SECRET_SETTING1 = 0x84;
+    case SECRET_SETTING2 = 0x85;
+    case SECRET_SETTING3 = 0x86;
+    case SECRET_SETTING4 = 0x87;
+    case SECRET_SETTING5 = 0x88;
+    case SECRET_SETTING6 = 0x89;
+    case SECRET_SETTING7 = 0x8A;
+    case SECRET_SETTING8 = 0x8B;
+    case SECRET_SETTING9 = 0x8C;
+    case SECRET_SETTING10 = 0x8D;
+    case SECRET_SETTING11 = 0x8E;
+    case SECRET_SETTING12 = 0x8F;
+    case SECRET_SETTING13 = 0x90;
+    case SECRET_SETTING30 = 0x98;
+
+    case SECRET_SETTING21 = 0xAE;
+
+    case RGB_INTERFACE_SIGNAL_CONTROL = 0xB0;
+    case BLANKING_PORCH_CONTROL = 0xB5;
+    case DISPLAY_FUNCTION_CONTROL = 0xB6;
+    case TEARING_EFFECT_CONTROL = 0xBA;
+
+    case SECRET_SETTING15 = 0xBC;
+    case SECRET_SETTING14 = 0xBD;
+    case SECRET_SETTING17 = 0xBE;
+
+    case SECRET_SETTING22 = 0xCD;
+
+    case POWER_CONTROL_1 = 0xC1;
+    case POWER_CONTROL_2 = 0xC3;
+    case POWER_CONTROL_3 = 0xC4;
+    case POWER_CONTROL_4 = 0xC9;
+    case POWER_CONTROL_7 = 0xA7;
+
+    case SECRET_SETTING18 = 0xE1;
+    case SECRET_BOOT_REGISTER = 0xEB;
+    case FRAME_RATE = 0xE8;
+    case SPI_2DATA_CONTROL = 0xE9;
+
+    case SECRET_SETTING19 = 0xDF;
+    case SECRET_SETTING20 = 0xED;
+
+    case SET_GAMMA1 = 0xF0;
+    case SET_GAMMA2 = 0xF1;
+    case SET_GAMMA3 = 0xF2;
+    case SET_GAMMA4 = 0xF3;
+    case INTERFACE_CONTROL = 0xF6;
+    case SECRET_SETTING16 = 0xFF;
+}
