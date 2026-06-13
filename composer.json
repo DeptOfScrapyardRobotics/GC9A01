@@ -1,0 +1,44 @@
+{
+    "name": "dept-of-scrapyard-robotics/gc9a01",
+    "description": "Drive GC9A01 round TFT LCD displays over SPI with PHP",
+    "type": "library",
+    "version": "0.4.3",
+    "keywords": [
+        "framework",
+        "scrapyard-io"
+    ],
+    "license": "MIT",
+    "homepage": "https://dosr.projectsaturnstudios.com",
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "scrapyard-io/waveforms": "^0.4.0",
+        "scrapyard-io/reality-interface": "^0.4.0",
+        "scrapyard-io/bare-metal": "^0.4.0"
+    },
+    "suggest": {
+        "scrapyard-io/gpio": "^0.4.0 - For direct linux-based GPIO",
+        "scrapyard-io/spi": "^0.4.0 - For direct linux-based SPI",
+        "scrapyard-io/mpsse": "^0.4.0 - For SPI/GPIO over an FTDI Serial-to-USB Device"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Displays\\GC9A01\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
